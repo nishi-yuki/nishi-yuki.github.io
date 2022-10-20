@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {{ $scss := resources.Get "scss/style.scss" }}
+    {{ $style := $scss | resources.ToCSS }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    <title>Nishimura's Portfolio</title>
+</head>
+
+<body class="default-color">
+    <header>
+        <nav>
+            <span>Home</span>
+            <span>About me</span>
+            <span>Works</span>
+            <span>Contact</span>
+        </nav>
+    </header>
+    <main>
+        <section class="l-name">
+            <div class="img-wrapper-circle">
+                <img src="/img/icon.jpg">
+            </div>
+            <div>
+                <h1>Nishimura Yuki</h1>
+                <p>computer programmer</p>
+            </div>
+        </section>
+        <section>
+            <h2>About me</h2>
+            <p>高校生でプログラミングに出会い熱中してからプログラムを書き続けています。</p>
+        </section>
+        <section>
+            <h2>Works</h2>
+            <div id="works" class="works">
+                <div class="work">
+                    <div class="work-img-wrapper">
+                        <img src="/img/work.png">
+                    </div>
+                    <div>
+                        <h3>Work</h3>
+                        <p>説明</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Contact</h2>
+            <p>contact</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2022 Nishimura Yuki</p>
+    </footer>
+</body>
+
+</html>

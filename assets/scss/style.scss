@@ -1,0 +1,149 @@
+@use 'reset';
+
+@mixin content-centering {
+    width: calc(100% - 60px);
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+@mixin mq($breakpoint) {
+    $breakpoints: (
+        'tab': 900px,
+        'sp': 500px,
+    );
+
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
+@mixin shadow {
+    box-shadow: #aaa 0px 5px 10px;
+}
+
+main {
+    @include content-centering;
+}
+
+header {
+    width: 100%;
+}
+
+nav {
+    @include content-centering;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    text-align: center;
+
+    span {
+        font-size: 1.2rem;
+        padding: 0.1em 0.2em;
+        border-bottom: #020826 solid 2px;
+    }
+}
+
+footer {
+    @include content-centering;
+    p {
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+}
+
+section {
+    padding: 1em 0;
+    font-size: 1.2rem;
+
+    h2 {
+        font-size: 2rem;
+        margin: 0.8em 0;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+section.l-name {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 0;
+
+    @include mq('tab') {
+        padding: 3rem 0;
+    }
+
+    @include mq('sp') {
+        padding: 2rem 0;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin: 0 auto;
+    }
+
+    p {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0 auto;
+    }
+}
+
+.works {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include mq('tab') {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mq('sp') {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    grid-template-rows: auto;
+    grid-gap: 36px;
+
+    .work {
+        @include shadow;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 2fr;
+        background-color: white;
+        padding: 8%;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.img-wrapper-circle {
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 50%;
+    @include shadow;
+
+    img {
+        height: 220px;
+        width: 220px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
+.default-color {
+    background-color: #F9F4EF;
+    color: #020826;
+
+    p {
+        color: #716040;
+    }
+}
