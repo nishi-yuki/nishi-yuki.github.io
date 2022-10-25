@@ -131,6 +131,9 @@ section.l-name {
 }
 
 .img-wrapper-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #fff;
     padding: 12px;
     border-radius: 50%;
