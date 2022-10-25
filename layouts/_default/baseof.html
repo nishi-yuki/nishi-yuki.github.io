@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {{ $scss := resources.Get "scss/style.scss" }}
+    {{ $style := $scss | resources.ToCSS }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    <title>Nishimura's Portfolio</title>
+</head>
+
+<body class="default-color">
+    {{ block "main" . }}
+    {{ end }}
+    <footer>
+        <p>© 2022 Nishimura Yuki</p>
+    </footer>
+</body>
+
+</html>
