@@ -1,5 +1,10 @@
 @use 'reset';
 
+a {
+    text-decoration: none;
+}
+
+
 @mixin content-centering {
     width: calc(100% - 60px);
     max-width: 1040px;
@@ -141,7 +146,15 @@ section.l-name {
 
 .default-color {
     background-color: #F9F4EF;
-    color: #020826;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #020826;
+    }
 
     p {
         color: #716040;
