@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main class="work-page">
+    {{ with .Resources.GetMatch (.Param "image") }}
+    <p>
+        <img src="{{ .RelPermalink }}">
+    </p>
+    {{ else }}
+    <img src="/img/work.png">
+    {{ end }}
+    <div class="work-title">
+        <h1>{{ .Title }}</h1>
+        {{ with .Param "github" }}
+        <a href="{{ . }}"><img src="/img/GitHub-Mark-64px.png"></a>
+        {{ end }}
+        {{ with .Param "weblink" }}
+        <a href="{{ . }}"><img src="/svg/internet.svg"></a>
+        {{ end }}
+    </div>
+    {{ .Content }}
+</main>
+{{ end }}
