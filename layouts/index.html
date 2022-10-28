@@ -20,7 +20,7 @@
                 {{ range $works }}
                     <a class="work" href="{{ .RelPermalink }}">
                         <div class="work-img-wrapper">
-                            {{ with .Resources.GetMatch "img.png" }}
+                            {{ with .Resources.GetMatch (.Param "image") }}
                             <img src="{{ .RelPermalink }}">
                             {{ else }}
                             <img src="/img/work.png">

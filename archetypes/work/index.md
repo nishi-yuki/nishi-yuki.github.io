@@ -1,8 +1,10 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-image: "/img/work.png"
+image: ""
 description: "This is my work."
+github: ""
+weblink: ""
 draft: true
 ---
 
