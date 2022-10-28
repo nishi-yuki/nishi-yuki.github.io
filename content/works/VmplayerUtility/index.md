@@ -5,7 +5,6 @@ image: "vmputil.png"
 description: "仮想マシンの起動を楽にするツール"
 github: "https://github.com/nishi-yuki/VmplayerUtility"
 url: ""
-draft: true
 ---
 
 仮想マシンモニタ「VMware Workstation Player」の仮想マシンを起動するショートカットを作成するツールです。
