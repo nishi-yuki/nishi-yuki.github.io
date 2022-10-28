@@ -4,9 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {{ $options := (dict "transpiler" "dartsass") }}
     {{ $scss := resources.Get "scss/style.scss" }}
-    {{ $style := $scss | resources.ToCSS $options }}
+    {{ $style := $scss | resources.ToCSS }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
     <title>Nishimura's Portfolio</title>
 </head>
