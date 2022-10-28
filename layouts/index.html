@@ -1,10 +1,10 @@
 {{ define "main" }}
     <header>
         <nav>
-            <span>Home</span>
-            <span>About me</span>
-            <span>Works</span>
-            <span>Contact</span>
+            <a href="#">Home</a>
+            <a href="#about">About me</a>
+            <a href="#works">Works</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
     <main>
@@ -17,11 +17,11 @@
                 <p>computer programmer</p>
             </div>
         </section>
-        <section>
+        <section id="about">
             <h2>About me</h2>
             <p>高校生でプログラミングに出会い熱中してからプログラムを書き続けています。</p>
         </section>
-        <section>
+        <section id="works">
             <h2>Works</h2>
             <div id="works" class="works">
                 {{ $works := where .Site.RegularPages "Section" "works" }}
@@ -42,9 +42,21 @@
                 {{ end }}
             </div>
         </section>
-        <section>
+        <section id="contact">
             <h2>Contact</h2>
             <p>contact</p>
         </section>
     </main>
+    <script>
+        const header = document.querySelector("header");
+
+        window.addEventListener("scroll", event => {
+            if (window.scrollY > 30) {
+                header.classList.add("scrolling");
+            } else {
+                header.classList.remove("scrolling");
+            }
+            console.log(window.scrollY);
+        });
+    </script>
 {{ end }}
