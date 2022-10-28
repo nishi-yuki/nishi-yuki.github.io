@@ -64,7 +64,14 @@ nav {
     a {
         padding: 0.1em 0.2em;
         color: #020826;
-        border-bottom: #020826 solid 2px;
+        border-bottom: solid 2px;
+        border-bottom-color: transparent;
+        transition: border-bottom-color 0.3s;
+
+        &:hover {
+            border-bottom-color: #020826;
+            transition: border-bottom 0.3s;
+        }
     }
 }
 
