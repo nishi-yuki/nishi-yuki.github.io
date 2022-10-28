@@ -1,11 +1,9 @@
 {{ define "main" }}
 <main class="work-page">
     {{ with .Resources.GetMatch (.Param "image") }}
-    <p>
-        <img src="{{ .RelPermalink }}">
-    </p>
+    <p><img src="{{ .RelPermalink }}"></p>
     {{ else }}
-    <img src="/img/work.png">
+    <p><img src="/img/work.png"></p>
     {{ end }}
     <div class="work-title">
         <h1>{{ .Title }}</h1>
