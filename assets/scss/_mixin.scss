@@ -1,0 +1,20 @@
+@mixin content-centering {
+    width: calc(100% - 60px);
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+@mixin mq($breakpoint) {
+    $breakpoints: (
+        'tab': 900px,
+        'sp': 500px,
+    );
+
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}
+
+@mixin shadow {
+    box-shadow: #aaa 0px 5px 10px;
+}
