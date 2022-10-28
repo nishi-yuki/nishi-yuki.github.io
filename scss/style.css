@@ -367,6 +367,9 @@ section {
     border-radius: 50%;
     object-fit: cover; }
 
+.contacts {
+  font-size: 1.2rem; }
+
 .work-page p:has(img) {
   padding: 2rem 0;
   text-align: center; }
