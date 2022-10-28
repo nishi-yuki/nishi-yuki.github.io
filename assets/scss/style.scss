@@ -40,10 +40,12 @@ header {
     z-index: 100;
     background-color: #F9F4EF;
     margin: 0;
+    transition: box-shadow 0.3s;
 }
 
 header.scrolling {
     box-shadow: #aaa 0px 1px 10px;
+    transition: box-shadow 0.3s;
 }
 
 nav {
