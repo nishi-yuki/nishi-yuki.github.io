@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {{ $options := (dict "transpiler" "dartsass") }}
+    {{ $options := (dict "transpiler" "libsass") }}
     {{ $scss := resources.Get "scss/style.scss" }}
     {{ $style := $scss | resources.ToCSS $options }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
