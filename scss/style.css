@@ -370,15 +370,14 @@ section {
 .contacts {
   font-size: 1.2rem; }
 
-.work-page p:has(img) {
-  padding: 2rem 0;
-  text-align: center; }
-  .work-page p:has(img) img {
-    max-width: 80%;
-    max-height: 60%; }
-    @media (max-width: 500px) {
-      .work-page p:has(img) img {
-        max-width: 100%; } }
+.work-page p img {
+  display: block;
+  max-width: 80%;
+  max-height: 60%;
+  margin: 0 auto; }
+  @media (max-width: 500px) {
+    .work-page p img {
+      max-width: 100%; } }
 .work-title {
   display: flex;
   flex-direction: row;
