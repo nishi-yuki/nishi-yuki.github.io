@@ -21,7 +21,7 @@
                     <a class="work" href="{{ .RelPermalink }}">
                         <div class="work-img-wrapper">
                             {{ with .Resources.GetMatch (.Param "image") }}
-                            <img src="{{ .RelPermalink }}">
+                            <img src="{{ .RelPermalink }}" alt="{{ $.Title }}">
                             {{ else }}
                             <img src="/img/work.png">
                             {{ end }}
