@@ -8,3 +8,15 @@ weblink: "https://nishi-yuki.github.io/"
 draft: true
 ---
 
+ポートフォリオサイトを作成しました。Hugoを使用し、作品ページをMarkdownで簡単に追加できるように工夫しました。HTML/CSSを学習するためテーマを使用せず、HTMLとCSSを自作しています。
+また、CSSはSassを使用して生成しています。
+
+メディアクエリを使ってレスポンシブ対応しており、スマートフォンでも適切に表示されます。
+
+### 使用技術
+
+ - HTML
+ - CSS
+ - Sass
+ - JavaScript
+ - Hugo
