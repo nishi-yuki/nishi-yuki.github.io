@@ -1,9 +1,9 @@
-@use 'reset';
+@import 'reset';
 
-@use '_base';
+@import '_base';
 
-@use '_top';
+@import '_top';
 
-@use 'work';
+@import 'work';
 
-@use '_theme';
+@import '_theme';

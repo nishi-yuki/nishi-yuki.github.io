@@ -1,4 +1,4 @@
-@use "mixin" as *;
+@import "mixin";
 
 .topname {
     display: flex;
@@ -84,4 +84,8 @@
         border-radius: 50%;
         object-fit: cover;
     }
+}
+
+.contacts{
+    font-size: 1.2rem;
 }
