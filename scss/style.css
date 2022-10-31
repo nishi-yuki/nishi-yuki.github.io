@@ -374,7 +374,8 @@ section {
   display: block;
   max-width: 80%;
   max-height: 60%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  box-shadow: #aaa 0px 5px 10px; }
   @media (max-width: 500px) {
     .work-page p img {
       max-width: 100%; } }
