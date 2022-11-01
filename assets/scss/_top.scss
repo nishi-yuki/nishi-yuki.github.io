@@ -65,6 +65,18 @@
             font-size: 1.4rem;
             font-weight: bold;
         }
+
+        transition: box-shadow 0.3s;
+
+        &:hover {
+            box-shadow: none;
+            transition: box-shadow 0.3s;
+        }
+
+        &:active {
+            box-shadow: inset #aaa 0px 5px 10px;
+            transition: box-shadow 0.3s;
+        }
     }
 }
 
@@ -86,6 +98,6 @@
     }
 }
 
-.contacts{
+.contacts {
     font-size: 1.2rem;
 }
