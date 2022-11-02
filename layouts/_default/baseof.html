@@ -9,7 +9,7 @@
     {{ $scss := resources.Get "scss/style.scss" }}
     {{ $style := $scss | resources.ToCSS $options }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-    <title>Nishimura's Portfolio</title>
+    <title>{{ $.Site.Title }}</title>
 </head>
 
 <body class="default-color">
@@ -24,7 +24,7 @@
     {{ block "main" . }}
     {{ end }}
     <footer>
-        <p>© 2022 Nishimura Yuki</p>
+        <p>© 2022 {{ $.Site.Params.author }}</p>
     </footer>
     <script src="/script.js"></script>
 </body>
