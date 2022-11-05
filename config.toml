@@ -2,4 +2,5 @@ baseURL = 'https://nishi-yuki.github.io/'
 languageCode = 'ja'
 title = "Yuki's Portfolio"
 [params]
+  description = "プログラマーのYukiのポートフォリオサイトです。"
   author = "Nishimura Yuki"

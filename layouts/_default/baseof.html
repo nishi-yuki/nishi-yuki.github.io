@@ -10,6 +10,9 @@
     {{ $style := $scss | resources.ToCSS $options }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
     <title>{{ $.Site.Title }}</title>
+    {{ block "ogp" . }}
+    {{ partial "head/ogp.html" . }}
+    {{ end }}
 </head>
 
 <body class="default-color">
