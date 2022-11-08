@@ -10,7 +10,11 @@
         color: #020826;
     }
 
-    p {
+    p, li {
         color: #716040;
+    }
+
+    li {
+        list-style-type: square;
     }
 }
