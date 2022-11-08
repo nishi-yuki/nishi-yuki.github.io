@@ -239,12 +239,11 @@ Add the correct display in Chrome and Safari.
 summary {
   display: list-item; }
 
-a {
-  text-decoration: none;
+a, p, li {
   font-size: 1.2rem; }
 
-p {
-  font-size: 1.2rem; }
+a {
+  text-decoration: none; }
 
 h1 {
   font-size: 4rem; }
@@ -308,7 +307,7 @@ section {
   padding: 2rem 0 0 0; }
   section h2 {
     margin: 0.8em 0; }
-  section p {
+  section p, section li {
     margin: 0; }
 
 .topname {
@@ -416,5 +415,7 @@ section {
   .default-color h5,
   .default-color h6 {
     color: #020826; }
-  .default-color p {
+  .default-color p, .default-color li {
     color: #716040; }
+  .default-color li {
+    list-style-type: square; }
