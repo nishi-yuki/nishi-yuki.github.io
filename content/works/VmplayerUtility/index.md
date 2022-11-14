@@ -12,3 +12,7 @@ url: ""
 
 ![作成オプションの選択画面](./vmputil-select.png)
 
+### 使用技術
+
+ - C#
+ - Windows Forms
