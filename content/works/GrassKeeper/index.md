@@ -5,7 +5,6 @@ image: "grass.png"
 description: "今日分のGitHubの草について報告するBot"
 github: "https://github.com/nishi-yuki/GrassKeeper"
 weblink: ""
-draft: true
 ---
 
 今日分のGitHubの草が生えているかどうかを通知するDiscordBotです。
