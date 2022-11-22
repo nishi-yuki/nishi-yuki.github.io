@@ -1,7 +1,7 @@
 ---
 title: "GrassKeeper"
 date: 2022-11-20T22:22:18+09:00
-image: "grass.png"
+image: "grasskeeperaws.png"
 description: "今日分のGitHubの草について報告するBot"
 github: "https://github.com/nishi-yuki/GrassKeeper"
 weblink: ""
